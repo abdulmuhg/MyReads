@@ -15,7 +15,7 @@ import com.abdulmughni.personal.myreads.databinding.FragmentDashboardBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class DashboardFragment : Fragment() {
+class CurrentReadsFragment : Fragment() {
 
     private val viewModel: BookViewModel by viewModels()
     private val binding: FragmentDashboardBinding by lazy {

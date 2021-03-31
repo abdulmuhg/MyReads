@@ -32,7 +32,7 @@ class BookAdapter (
             tvRating.text = data[position].rating.toString()
             tvTotalEpisode.text = data[position].releaseDate
             Glide.with(holder.itemView.context)
-                .load("https://image.tmdb.org/t/p/w200/" + data[position].poster)
+                .load(data[position].poster)
                 .apply(
                     RequestOptions.placeholderOf(R.drawable.ic_loading)
                         .error(R.drawable.ic_error)

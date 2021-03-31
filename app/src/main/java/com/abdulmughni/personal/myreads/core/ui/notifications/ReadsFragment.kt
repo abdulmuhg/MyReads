@@ -4,23 +4,18 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
-import com.abdulmughni.personal.myreads.R
 import com.abdulmughni.personal.myreads.core.data.Responses
 import com.abdulmughni.personal.myreads.core.domain.model.Book
 import com.abdulmughni.personal.myreads.core.ui.BookAdapter
 import com.abdulmughni.personal.myreads.core.ui.BookViewModel
-import com.abdulmughni.personal.myreads.databinding.FragmentDashboardBinding
 import com.abdulmughni.personal.myreads.databinding.FragmentNotificationsBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class NotificationsFragment : Fragment() {
+class ReadsFragment : Fragment() {
 
     private val viewModel: BookViewModel by viewModels()
     private val binding: FragmentNotificationsBinding by lazy {
